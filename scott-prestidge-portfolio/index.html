@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scott Prestidge | Live Events, Design &amp; Project Coordination</title>
+<meta name="description" content="Scott Prestidge’s portfolio brings together live event delivery, architecture and generative AI research. Based in Dubai and open to agency opportunities.">
+<meta property="og:title" content="Scott Prestidge | Live Events, Design &amp; Project Coordination">
+<meta property="og:description" content="Scott Prestidge’s portfolio brings together live event delivery, architecture and generative AI research. Based in Dubai and open to agency opportunities.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:swap;src:url(fonts/inter-300.woff2) format('woff2')}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-400.woff2) format('woff2')}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/inter-500.woff2) format('woff2')}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-600.woff2) format('woff2')}html,body{margin:0}img{max-width:100%}</style>
+<style>
+.phone{display:none}
+@media (max-width: 767px){
+html,body{height:auto!important;overflow:auto!important;overflow-x:hidden!important}
+.deck,.hdr,.cue,.modal,.view{display:none!important}
+.phone{display:block;width:390px;margin:0 auto;background:#f6f6f4}
+.phone a.cta{transition:background-color .25s,color .25s}
+.phone a.cta:hover,.phone a.cta:active{background:#161616!important;color:#f6f6f4!important}
+.phone a.cta.solid:hover,.phone a.cta.solid:active{background:#f6f6f4!important;color:#161616!important}
+.phone .land a.cta:hover,.phone .land a.cta:active{background:#f6f6f4!important;color:#161616!important}
+.phone .land a.cta.solid:hover,.phone .land a.cta.solid:active{background:#161616!important;color:#f6f6f4!important}
+.psheet,.pmenu{position:fixed;inset:0;z-index:300;overflow-y:auto;-webkit-overflow-scrolling:touch;background:#f6f6f4;visibility:hidden}
+.pmenu{background:#161616;color:#f6f6f4;transform:translateY(-100%);transition:transform .6s cubic-bezier(.76,0,.24,1),visibility 0s .6s}
+.pmenu.open{transform:none;visibility:visible;transition:transform .6s cubic-bezier(.76,0,.24,1)}
+.psheet{clip-path:inset(100% 0 0 0);-webkit-clip-path:inset(100% 0 0 0);transition:clip-path .8s cubic-bezier(.76,0,.24,1),-webkit-clip-path .8s cubic-bezier(.76,0,.24,1),visibility 0s .8s}
+.psheet.open{clip-path:inset(0 0 0 0);-webkit-clip-path:inset(0 0 0 0);visibility:visible;transition:clip-path .8s cubic-bezier(.76,0,.24,1),-webkit-clip-path .8s cubic-bezier(.76,0,.24,1)}
+.pback{position:fixed;inset:0;z-index:299;background:rgba(22,22,22,.55);opacity:0;visibility:hidden;transition:opacity .5s ease .45s,visibility 0s .95s}
+.pback.open{opacity:1;visibility:visible;transition:opacity .5s ease}
+html{-webkit-tap-highlight-color:transparent}
+.phone a.cta,.pmenu nav a,.phone a[data-pclose],.phone a[href$=".html"],.phone a[href*=".html#"]{transition:transform .18s ease,background-color .25s,color .25s}
+.phone a.cta:active,.pmenu nav a:active,.phone a[data-pclose]:active,.phone a[href$=".html"]:active,.phone a[href*=".html#"]:active{transform:scale(.96)}
+.phone a:hover,.phone a:active,.pmenu a:hover{opacity:1!important}
+.phone .pph{overflow:hidden}
+.phone .skyline.go path{animation-delay:.25s;animation-duration:8.4s}
+.phone .pph img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.phone [data-ppop]:hover .pph img,.phone [data-ppop]:active .pph img{transform:scale(1.06)}
+.pmenu a{color:#f6f6f4}
+}
+@media (prefers-reduced-motion:reduce){.psheet,.pmenu,.pback{transition:none!important}}
+@media (max-width: 767px){html:has(.pland),html:has(.pland) body{height:100%!important;overflow:hidden!important;overscroll-behavior:none}.pland{background:#161616!important}}
+:root{--bg:#f6f6f4;--ink:#161616;--grey:#5e5e5b;--rule:#dcdcd8;--hdr:58px;color-scheme:light}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:hover{opacity:.7}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+html,body{height:100%;overflow:hidden}
+.deck{position:fixed;inset:0;will-change:transform;transform:translate3d(0,calc(var(--i,0) * -100%),0);transition:transform 1.5s cubic-bezier(.65,0,.35,1)}
+.deck>section{height:100%}
+@media (prefers-reduced-motion:reduce){.deck{transition:none}}
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--hdr);color:#f6f6f4;border-bottom:1px solid rgba(246,246,244,.3);transition:background .35s,color .35s,border-color .35s;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hdr.solid{background:var(--bg);color:var(--ink);border-color:var(--rule)}
+.hdr .in{max-width:1264px;height:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.brand{text-transform:uppercase;letter-spacing:.1em}
+.nav{display:flex;gap:22px;text-transform:uppercase;letter-spacing:.14em;font-size:11px;position:relative}
+.nav a,.nav button{font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;background:none;border:0;padding:6px 0;cursor:pointer}
+.workwrap{position:relative}
+.menu{position:absolute;right:-14px;top:calc(100% + 10px);min-width:210px;background:var(--bg);color:var(--ink);border:1px solid var(--rule);box-shadow:0 12px 28px rgba(0,0,0,.10);padding:6px 14px;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .2s,transform .2s,visibility 0s .2s;text-transform:none;letter-spacing:0}
+.workwrap:hover .menu,.workwrap:focus-within .menu,.menu.open{opacity:1;visibility:visible;transform:none;transition:opacity .2s,transform .2s}
+.workwrap::after{content:"";position:absolute;left:-20px;right:-20px;top:100%;height:14px}
+.menu a{display:flex;gap:12px;align-items:baseline;padding:9px 0;font-size:13px;font-weight:500;white-space:nowrap}
+.menu a+a{border-top:1px solid var(--rule)}
+.menu a:last-child{border-top:1px solid var(--ink)}
+.menu .n{font-size:10px;letter-spacing:.14em;color:var(--grey);width:16px}
+/* landing */
+.landing{position:relative;height:100%;overflow:hidden;background:#161616;color:#f6f6f4}
+.landing>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.landing .scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(10, 10, 10, 0.72) 0%, rgba(10, 10, 10, 0.62) 45%, rgba(10, 10, 10, 0.82) 100%)}
+.stage{position:absolute;left:50%;top:50%;width:1440px;height:900px;transform-origin:center;transform:translate(-50%,-50%) scale(var(--s,1))}
+.landing a{color:#f6f6f4}
+/* sections: every section is one 1440x900 frame scaled to the screen */
+.fsec{position:relative;height:100%;overflow:hidden;background:var(--bg)}
+.fsec.ruled{border-top:1px solid var(--rule);box-sizing:border-box}
+.frame{position:absolute;left:50%;top:50%;width:1440px;height:900px;transform-origin:center;transform:translate(-50%,-50%) scale(var(--s,1))}
+.area{position:absolute;left:88px;right:88px;top:58px;bottom:0;display:flex;align-items:center}
+.area>*{width:100%}
+.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:center}
+.rowimg{height:770px;width:395px!important;max-width:100%;object-fit:cover}
+.row>img[style*="grid-column: 3"]{justify-self:end}
+.moregrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{display:block}.card:hover{opacity:1}.card .ph{overflow:hidden}.card .ph img{display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}.card:hover .ph img{transform:scale(1.06)}
+.aboutgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:center;padding:24px 40px 72px;box-sizing:border-box}
+.contact-area{bottom:64px}
+.contactgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px;align-items:center}
+.foot{position:absolute;left:88px;right:88px;bottom:0}
+.foot footer{padding:16px 0 22px!important}
+.skyline path{stroke-dasharray:1;stroke-dashoffset:1}
+.skyline.go path{animation:draw 2.8s cubic-bezier(.6,0,.2,1) 1.9s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+/* modal: the whole panel animates as one piece */
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;visibility:hidden;pointer-events:none}
+.modal.open,.modal.closing{visibility:visible;pointer-events:auto}
+.backdrop{position:absolute;inset:0;background:rgba(22,22,22,.55);opacity:0;transition:opacity .5s ease}
+.modal.open .backdrop{opacity:1}
+.modal.closing .backdrop{transition-delay:.45s}
+.dlgwrap{position:relative;width:1240px;transform-origin:center;transform:scale(var(--ms,1))}
+.dlg{clip-path:inset(100% 0 0 0);transition:clip-path .8s cubic-bezier(.76,0,.24,1)}
+.modal.open .dlg{clip-path:inset(0 0 0 0)}
+.dlg a[data-close]{cursor:pointer}
+@media (prefers-reduced-motion:reduce){.dlg,.backdrop{transition:none!important}.skyline path{stroke-dashoffset:0}}
+
+
+
+.landing a.cta{transition:background-color .25s,color .25s}.landing a.cta:hover,.landing a.cta:active,.landing a.cta:focus-visible{background:#f6f6f4 !important;color:#161616 !important;border-color:#f6f6f4 !important;opacity:1 !important}
+.landing a.cta.solid:hover,.landing a.cta.solid:active,.landing a.cta.solid:focus-visible{background:#161616 !important;color:#f6f6f4 !important;border-color:#f6f6f4 !important}
+
+a.cta{transition:background-color .25s,color .25s,border-color .25s}a.cta:hover,a.cta:active,a.cta:focus-visible{background:#161616 !important;color:#f6f6f4 !important;border-color:#161616 !important;opacity:1 !important}
+a.cta.solid:hover,a.cta.solid:active,a.cta.solid:focus-visible{background:#f6f6f4 !important;color:#161616 !important;border-color:#161616 !important}
+.nav,.workwrap{height:100%;display:flex;align-items:center}.menu{top:calc(100% - 1px)!important}.workwrap::after{display:none}
+.cta:hover,.cta:active{opacity:1!important}
+.nav{font-size:10px!important;letter-spacing:.22em!important;gap:28px!important;font-weight:500}
+
+.cue{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:40;font:600 10px/1 Inter,system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#f6f6f4;background:none;border:0;padding:10px 12px;cursor:pointer;transition:opacity .4s,color .4s}.cue.dark{color:#161616}.cue.hide{opacity:0;pointer-events:none}.cue span{display:inline-block;animation:bob 1.8s ease-in-out infinite}@keyframes bob{50%{transform:translateY(4px)}}@media (prefers-reduced-motion:reduce){.cue span{animation:none}}
+</style><style>
+.lbz{cursor:zoom-in}
+.lbx{position:fixed;inset:0;z-index:1000;background:rgba(14,14,14,.97);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s .35s;font-family:Inter,system-ui,sans-serif;color:#f6f6f4;-webkit-tap-highlight-color:transparent;touch-action:pan-y pinch-zoom}
+.lbx.open{opacity:1;visibility:visible;transition:opacity .35s ease}
+.lbx figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px;max-width:92vw}
+.lbx img{display:block;max-width:92vw;max-height:80vh;width:auto;height:auto;object-fit:contain;transform:scale(.96);transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .25s;background:#222}
+.lbx.open img{transform:none}
+.lbx figcaption{font-size:11px;letter-spacing:.06em;line-height:1.5;color:rgba(246,246,244,.75);text-align:center;max-width:640px;padding:0 16px}
+.lbx button{position:absolute;background:none;border:0;color:#f6f6f4;font:inherit;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center}
+.lbx .lbc{top:16px;right:16px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(246,246,244,.5);font-size:22px;line-height:1}
+.lbx .lbp,.lbx .lbn{top:50%;margin-top:-24px;width:48px;height:48px;border-radius:999px;border:1px solid rgba(246,246,244,.5);font-size:18px}
+.lbx .lbp{left:20px}.lbx .lbn{right:20px}
+.lbx .lbk{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:10px;font-weight:600;letter-spacing:.22em;color:rgba(246,246,244,.6)}
+.lbx button:hover{background:#f6f6f4;color:#161616}
+@media (max-width:767px){.lbx .lbp,.lbx .lbn{display:none}.lbx img{max-height:74vh}}
+@media (prefers-reduced-motion:reduce){.lbx,.lbx img{transition:none}}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="in">
+<a class="brand" href="#landing" data-go="landing"><span style="font-weight:300">Scott</span> <span style="font-weight:600">Prestidge</span></a>
+<nav class="nav" aria-label="Main"><div class="workwrap"><button id="workbtn" aria-haspopup="true" aria-expanded="false" aria-controls="workmenu">Work</button><div class="menu" id="workmenu" role="menu"><a role="menuitem" href="#p1" data-go="p1"><span class="n">01</span>Buller Open-Air</a><a role="menuitem" href="#p2" data-go="p2"><span class="n">02</span>Tectonic Resonance</a><a role="menuitem" href="#p3" data-go="p3"><span class="n">03</span>Ctrl + Alt + Escape</a><a role="menuitem" href="#more" data-go="more"><span class="n">+</span>More work</a></div></div><a href="#about" data-go="about">About</a><a href="#contact" data-go="contact">Contact</a></nav>
+</div></header>
+<main class="deck" id="deck">
+<section class="landing snap" id="landing" aria-label="Introduction">
+<img src="images/buller-hero.webp" alt="Flame effects over the truss stage at sunset, Buller Open-Air">
+<div class="scrim" aria-hidden="true"></div>
+<div class="stage">
+
+
+<div style="position: absolute; left: 160px; width: 1120px; top: 190px; text-align: center">
+<p style="margin: 0 0 24px; font-size: 13px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase">Architecture × Live experiences</p>
+<h1 style="margin: 0; font-size: 126.16px; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; font-weight: 600; transform: translateX(-6.0px)">Scott Prestidge</h1>
+<div style="margin-top: 64px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px">
+<div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(246, 246, 244, 0.7)">Focus</div><div style="margin-top: 12px; font-size: 20px; font-weight: 600; line-height: 1.3">Client servicing<br>Project &amp; production coordination</div></div>
+<div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(246, 246, 244, 0.7)">Background</div><div style="margin-top: 12px; font-size: 20px; font-weight: 600; line-height: 1.3">Master of Architecture (Distinction)<br>RMIT · Hospitality operations</div></div>
+<div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(246, 246, 244, 0.7)">Based</div><div style="margin-top: 12px; font-size: 20px; font-weight: 600; line-height: 1.3">Dubai<br>Open to opportunities</div></div>
+</div>
+</div>
+<div style="position: absolute; left: 160px; width: 1120px; bottom: 64px; text-align: center">
+<p style="margin: 0; font-size: 17px; font-weight: 300; line-height: 1.65; color: rgba(246, 246, 244, 0.92); text-align: justify; text-align-last: center; hyphens: none">I’m Scott, an architecture graduate with hands-on experience in live events and venue leadership. Based in Dubai, I’m looking to join an experiential team where I can help turn ambitious ideas into memorable experiences.</p>
+<p style="margin: 14px 0 0; font-size: 17px; font-weight: 600; line-height: 1.5">Have a place for someone who thinks creatively and gets stuck in? Let’s talk.</p>
+<div style="margin-top: 28px; display: flex; justify-content: center; gap: 12px"><a class="cta solid" href="#p1" data-go="p1" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border: 1px solid #f6f6f4; border-radius: 999px; background: #f6f6f4; color: #161616; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">View selected work</a><a class="cta" href="#contact" data-go="contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; border: 1px solid rgba(246, 246, 244, 0.8); border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">Get in touch</a></div>
+</div>
+<p style="position: absolute; right: 48px; bottom: 20px; margin: 0; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7">Photo: Souki Media</p>
+</div>
+</section>
+<section class="snap fsec" id="p1" aria-label="Project 1"><div class="frame"><div class="area"><article class="row">
+<img class="rowimg" src="images/buller-poster.jpg" alt="Event poster for Buller Open-Air at Red Bull Winter Vibes" style="grid-column: 1 / 2; grid-row: 1; display: block;  object-fit: cover; object-position: 50% 50%; background: #e4e4e0">
+<div style="grid-column: 2 / 4; grid-row: 1; text-align: center"><div style="width: 640px; margin: 0 auto">
+<p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Live event · Mt Buller · 2026</p>
+<h2 style="margin: 0; font-size: 74.84px; font-weight: 400; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-5.58px)"><span style="font-weight: 600">Buller</span> <span style="font-weight: 600">Open-Air</span></h2>
+<p style="margin: 22px 0 0; font-size: 17px; font-weight: 300; line-height: 1.5; color: #3a3a38; text-align: justify; text-align-last: center; hyphens: none">Venue-side delivery for M87 × Red Bull Winter Vibes at Spurs, bringing around 600 guests to a live music activation in a remote alpine setting.</p>
+<dl style="margin: 34px 0 0; display: flex; justify-content: space-between; gap: 10px; font-size: 14px; text-align: center; border-top: 1px solid #161616"><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">My role</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Venue Lead<br>Venue-side delivery</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Brand / Promoter</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Red Bull Australia<br>M87</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Scale</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">600 guests<br>4 acts · 3 bars</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Team</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Event staff<br>of 20</dd></div></dl>
+<a class="cta" href="buller.html" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 36px; min-height: 44px; padding: 0 22px; border: 1px solid #161616; border-radius: 999px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase">View case study →</a>
+</div>
+</div>
+</article></div></div></section><section class="snap fsec" id="p2" aria-label="Project 2"><div class="frame"><div class="area"><article class="row">
+<img class="rowimg" src="images/tectonic-card.webp" alt="Close-up of the 3D-printed sandstone surface of Tectonic Resonance" style="grid-column: 3 / 4; grid-row: 1; display: block;  object-fit: cover; object-position: 50% 50%; background: #e4e4e0">
+<div style="grid-column: 1 / 3; grid-row: 1; text-align: center"><div style="width: 640px; margin: 0 auto">
+<p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Research · Generative AI · 2023–24</p>
+<h2 style="margin: 0; font-size: 56.72px; font-weight: 400; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-2.35px)"><span style="font-weight: 600">Tectonic</span> <span style="font-weight: 600">Resonance</span></h2>
+<p style="margin: 22px 0 0; font-size: 17px; font-weight: 300; line-height: 1.5; color: #3a3a38; text-align: justify; text-align-last: center; hyphens: none">Generative AI research at RMIT, developing datasets, training models and exploring image-to-3D workflows that informed a sandstone and sound installation.</p>
+<dl style="margin: 34px 0 0; display: flex; justify-content: space-between; gap: 10px; font-size: 14px; text-align: center; border-top: 1px solid #161616"><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">My role</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Research Assistant<br>Tectonic Formation Lab</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Collaborators</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Snooks+Harper<br>Philip Samartzis · RMIT</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Exhibited</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Queensland Art Gallery<br>Brisbane · 2024</dd></div></dl>
+<a class="cta" href="tectonic.html" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 36px; min-height: 44px; padding: 0 22px; border: 1px solid #161616; border-radius: 999px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase">View research →</a>
+</div>
+</div>
+</article></div></div></section><section class="snap fsec" id="p3" aria-label="Project 3"><div class="frame"><div class="area"><article class="row">
+<img class="rowimg" src="images/thesis-card.webp" alt="Thesis presentation panel for Ctrl + Alt + Escape" style="grid-column: 1 / 2; grid-row: 1; display: block;  object-fit: cover; object-position: 50% 0%; background: #e4e4e0">
+<div style="grid-column: 2 / 4; grid-row: 1; text-align: center"><div style="width: 640px; margin: 0 auto">
+<p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Master’s thesis · Design &amp; AI · 2024</p>
+<h2 style="margin: 0; font-size: 61.92px; font-weight: 400; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-3.0px)"><span style="font-weight: 600">Ctrl + Alt +</span> <span style="font-weight: 600">Escape</span></h2>
+<p style="margin: 22px 0 0; font-size: 17px; font-weight: 300; line-height: 1.5; color: #3a3a38; text-align: justify; text-align-last: center; hyphens: none">Who is the author when AI becomes part of the design process? A thesis exploring human and machine collaboration through new interventions in the fire escapes of SoHo, New York.</p>
+<dl style="margin: 34px 0 0; display: flex; justify-content: space-between; gap: 10px; font-size: 14px; text-align: center; border-top: 1px solid #161616"><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Type</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Master of Architecture<br>Thesis</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Supervisor</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Roland Snooks</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">University</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">RMIT University<br>2024</dd></div><div style="padding: 14px 0 0; white-space: nowrap"><dt style="font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b">Exhibited</dt><dd style="margin: 6px 0 0; font-size: 14px; line-height: 1.45">Major Project Catalogue<br>2024 RMIT Exhibition</dd></div></dl>
+<a class="cta" href="thesis.html" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 36px; min-height: 44px; padding: 0 22px; border: 1px solid #161616; border-radius: 999px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase">View thesis →</a>
+</div>
+</div>
+</article></div></div></section>
+<section class="snap fsec ruled" aria-label="From render to run sheet"><div class="frame"><div class="area"><div class="glance" aria-label="At a glance" style="display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; padding: 0">
+<div style="margin-bottom: 28px; text-align: center"><p style="margin: 0; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Architecture × Live events</p></div>
+<h2 style="margin: 0; font-size: 90.19px; line-height: 0.9; letter-spacing: -0.025em; text-transform: uppercase; white-space: nowrap; font-weight: 600; transform: translateX(-6.68px)">From render to run sheet</h2>
+<div style="position: relative; height: 34px; margin-top: 30px; line-height: 1">
+<p style="position: absolute; bottom: 0; left: -0.72px; margin: 0; font-size: 29.11px; white-space: nowrap; font-weight: 300">Architecture taught me how ideas take shape.</p>
+<p style="position: absolute; bottom: 0; left: 636.7px; margin: 0; font-size: 31.0px; white-space: nowrap; font-weight: 600">Venues taught me how they get delivered.</p>
+</div>
+<svg class="skyline" viewBox="0 0 1264 122" role="img" aria-label="One continuous line drawing: mountain peaks, a coffee cup, a house, a staircase and a martini glass" style="display: block; width: 100%; height: auto; margin-top: 52px; overflow: visible"><path d="M0 120 H274 L318 65.6 L334 81.6 L360.4 51.2 L410 120 H490 V80 H530 V89.6 Q546 89.6 546 99.2 Q546 108.8 530 108.8 V120 H626 V88 L658 57.6 L690 88 V120 H770 V108 H782 V96 H794 V84 H806 V72 H818 V60 H830 H862 V120 H948.4 V115.2 H964.4 V100.8 L942 78.4 H990 L967.6 100.8 V115.2 H983.6 V120 H1264" pathLength="1" fill="none" stroke="#161616" stroke-width="1.25" stroke-linejoin="miter" vector-effect="non-scaling-stroke"></path></svg>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px; margin-top: 56px">
+<div style="border-top: 1px solid #161616; padding-top: 34px; text-align: center"><div style="font-size: 64px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; text-transform: uppercase">M.Arch</div><div style="margin-top: 14px; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Master of Architecture · Distinction · RMIT</div></div>
+<div style="border-top: 1px solid #161616; padding-top: 34px; text-align: center"><div style="font-size: 64px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; text-transform: uppercase">40+</div><div style="margin-top: 14px; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Staff led and rostered · Riverland Bar</div></div>
+<div style="border-top: 1px solid #161616; padding-top: 34px; text-align: center"><div style="font-size: 64px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; text-transform: uppercase">~600</div><div style="margin-top: 14px; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Guests · Buller Open-Air · Venue-side delivery</div></div>
+</div>
+</div></div></div></section>
+<section class="snap fsec ruled" id="more" aria-label="More work"><div class="frame"><div class="area"><div><p style="margin: 0 0 32px; text-align: center; font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Selected architecture studies</p><div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+<a href="#" data-popup="re-extraction" class="card" style="display: block">
+<div class="ph"><img src="images/reextraction-hero.jpg" alt="Facade screen and scaffolding, Re-Extraction" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #e4e4e0"></div>
+<div style="margin-top: 14px; text-align: center; font-size: 14px; font-weight: 600">Re-Extraction</div><div style="margin-top: 4px; min-height: 31px; text-align: center; font-size: 10px; line-height: 1.55; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b; text-wrap: balance">RMIT · _post/Extractivism · Semester 1, 2024</div><div style="margin-top: 10px; text-align: center"><span style="font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">View project →</span></div>
+</a>
+<a href="#" data-popup="parti-line" class="card" style="display: block">
+<div class="ph"><img src="images/partiline-street.jpg" alt="Street-front render of the housing block at night, Parti Line" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #e4e4e0"></div>
+<div style="margin-top: 14px; text-align: center; font-size: 14px; font-weight: 600">Parti Line</div><div style="margin-top: 4px; min-height: 31px; text-align: center; font-size: 10px; line-height: 1.55; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b; text-wrap: balance">RMIT · Parti Line · Semester 2, 2023</div><div style="margin-top: 10px; text-align: center"><span style="font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">View project →</span></div>
+</a>
+<a href="#" data-popup="emerging-formations" class="card" style="display: block">
+<div class="ph"><img src="images/emerging-hero.jpg" alt="The final form of Emerging Formations" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #e4e4e0"></div>
+<div style="margin-top: 14px; text-align: center; font-size: 14px; font-weight: 600">Emerging Formations</div><div style="margin-top: 4px; min-height: 31px; text-align: center; font-size: 10px; line-height: 1.55; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b; text-wrap: balance">RMIT · Diffusion Tectonics · Semester 1, 2023</div><div style="margin-top: 10px; text-align: center"><span style="font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">View project →</span></div>
+</a>
+<a href="#" data-popup="displacement" class="card" style="display: block">
+<div class="ph"><img src="images/displacement-hero.jpg" alt="Vaulted concrete corridor, Displacement" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #e4e4e0"></div>
+<div style="margin-top: 14px; text-align: center; font-size: 14px; font-weight: 600">Displacement</div><div style="margin-top: 4px; min-height: 31px; text-align: center; font-size: 10px; line-height: 1.55; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b; text-wrap: balance">VUW · ARCI312 · Semester 2, 2022</div><div style="margin-top: 10px; text-align: center"><span style="font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">View project →</span></div>
+</a>
+</div></div></div></div></section>
+<section class="snap fsec ruled" id="about" aria-label="About me"><div class="frame"><div class="area"><div class="aboutgrid">
+<div>
+<h2 style="margin: 0 0 28px; font-size: 63.4px; letter-spacing: -0.01em; line-height: 1; text-transform: uppercase"><span style="font-weight: 600">About me</span></h2>
+<p style="margin: 0; font-size: 19.4px; font-weight: 300; line-height: 1.35">I’m Scott, an architecture graduate from New Zealand, now based in Dubai. <span style="font-weight: 600">My background brings together creative research, live events and the practical demands of running busy venues.</span></p>
+<p style="margin: 18px 0 0; font-size: 14.1px; font-weight: 300; line-height: 1.65; color: #3a3a38">At RMIT, I explored how AI can support architectural design while making the human decisions behind the work visible. In hospitality, I led teams, coordinated suppliers and managed the details that shape a guest’s experience. At Mt Buller, those responsibilities extended to venue-side delivery for Buller Open-Air, an M87 × Red Bull activation for around 600 guests.</p><p style="margin: 18px 0 0; font-size: 14.1px; font-weight: 300; line-height: 1.65; color: #3a3a38">I’m now looking to bring that combination into an experiential agency, supporting clients and creative teams as ideas move from a brief into a live experience.</p>
+
+</div>
+<div>
+<div style="margin-top: 0"><div style="padding-top: 12px; border-top: 1px solid #161616; margin-bottom: 2px"><span style="font-size: 9.7px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase">What I bring</span></div><div style="display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 16px; padding: 6px 0; border-bottom: 1px solid #dcdcd8"><span style="font-size: 12.3px; font-weight: 600">Coordination</span><span style="font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Team schedules, supplier communication, documentation and follow-through across moving parts.</span></div><div style="display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 16px; padding: 6px 0; border-bottom: 1px solid #dcdcd8"><span style="font-size: 12.3px; font-weight: 600">Live delivery</span><span style="font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Venue planning, staff briefings, guest experience and on-the-day issue resolution.</span></div><div style="display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 16px; padding: 6px 0; border-bottom: 1px solid #dcdcd8"><span style="font-size: 12.3px; font-weight: 600">Design thinking</span><span style="font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Spatial awareness, visual communication and an understanding of how people experience places.</span></div><div style="display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 16px; padding: 6px 0"><span style="font-size: 12.3px; font-weight: 600">Research</span><span style="font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Structured experimentation, AI workflows and clear records of decisions and outputs.</span></div></div>
+<div style="margin-top: 8px"><div style="display: flex; align-items: baseline; gap: 14px; padding-top: 14px; border-top: 1px solid #161616; margin-bottom: 4px"><span style="font-size: 9.7px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase">Experience</span></div><div style="padding: 6px 0; border-bottom: 1px solid #dcdcd8"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 12.3px"><span style="font-weight: 600">Venue Manager</span> · <span style="color: #5e5e5b">Spurs, Mt Buller</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b; white-space: nowrap">Jun–Aug 2026</span></div><div style="margin-top: 3px; font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Led a team of 20 and managed staffing, suppliers, compliance and daily operations, including venue-side delivery for Buller Open-Air.</div></div><div style="padding: 6px 0; border-bottom: 1px solid #dcdcd8"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 12.3px"><span style="font-weight: 600">Venue Duty Manager</span> · <span style="color: rgb(94, 94, 91)">QT Rooftop, Melbourne</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(94, 94, 91); white-space: nowrap">Apr–Jun 2026</span></div><div style="margin-top: 3px; font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Supported day-to-day venue operations and service delivery in a busy rooftop setting.</div></div><div style="padding: 6px 0; border-bottom: 1px solid #dcdcd8"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 12.3px"><span style="font-weight: 600">Venue Supervisor</span> · <span style="color: rgb(94, 94, 91)">Riverland Bar, Melbourne</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(94, 94, 91); white-space: nowrap">Aug 2025–Apr 2026</span></div><div style="margin-top: 3px; font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Led large service teams and coordinated in-house functions, including client briefings, event-day contact and post-event reporting.</div></div><div style="padding: 6px 0; border-bottom: 1px solid #dcdcd8"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 12.3px"><span style="font-weight: 600">Bar Supervisor</span> · <span style="color: rgb(94, 94, 91)">Blossom Rooftop, Pullman, Melbourne</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(94, 94, 91); white-space: nowrap">Aug 2023–Aug 2025</span></div><div style="margin-top: 3px; font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Supervised bar service and supported the team in delivering a consistent guest experience.</div></div><div style="padding: 6px 0"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px"><span style="font-size: 12.3px"><span style="font-weight: 600">Research Assistant</span> · <span style="color: rgb(94, 94, 91)">RMIT, Melbourne</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(94, 94, 91); white-space: nowrap">Jun 2023–Dec 2024</span></div><div style="margin-top: 3px; font-size: 11.4px; font-weight: 300; line-height: 1.5; color: #3a3a38">Developed generative AI workflows and supported research coordination, documentation and project deliverables.</div></div></div>
+<div style="margin-top: 8px"><div style="display: flex; align-items: baseline; gap: 14px; padding-top: 12px; border-top: 1px solid #161616; margin-bottom: 4px"><span style="font-size: 9.7px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase">Education</span></div><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 6px 0; border-bottom: 1px solid #dcdcd8"><span style="font-size: 12.3px"><span style="font-weight: 600">Master of Architecture (Distinction)</span> · <span style="color: rgb(94, 94, 91)">RMIT University, Australia</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(94, 94, 91); white-space: nowrap">2023–2024</span></div><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 6px 0; border-bottom: 1px solid #dcdcd8"><span style="font-size: 12.3px"><span style="font-weight: 600">Bachelor of Architectural Studies</span> · <span style="color: rgb(94, 94, 91)">Victoria University of Wellington, NZ</span></span><span style="font-size: 8.8px; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(94, 94, 91); white-space: nowrap">2020–2022</span></div></div>
+</div>
+</div></div></div></section>
+<section class="snap fsec ruled" id="contact" aria-label="Contact"><div class="frame"><div class="area contact-area"><div class="contactgrid">
+<div><img src="images/portrait.webp" alt="Portrait of Scott Prestidge" style="display: block; width: 100%; height: 640px; object-fit: cover; object-position: 50% 20%; background: #e4e4e0"></div>
+<div>
+<h2 style="margin: 0 0 28px; font-size: 72px; letter-spacing: -0.01em; line-height: 1; text-transform: uppercase"><span style="font-weight: 600">Let’s talk</span></h2>
+<p style="margin: 0 0 36px; font-size: 22px; font-weight: 300; line-height: 1.4">I’m based in Dubai and open to opportunities in client servicing, project coordination and production coordination. If my background could be useful to your team, I’d love to connect.</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px"><span class="info" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 10px; border: 1px solid #161616; border-radius: 999px; font-size: 12px; white-space: nowrap; cursor: text; user-select: all"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg><span>scott.gregory.prestidge@gmail.com</span></span><span class="info" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 10px; border: 1px solid #161616; border-radius: 999px; font-size: 12px; white-space: nowrap; cursor: text; user-select: all"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg><span>+971 58 885 3192</span></span><a class="cta" target="_blank" rel="noopener" href="https://www.linkedin.com/in/scott-prestidge" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 10px; border: 1px solid #161616; border-radius: 999px; font-size: 12px; white-space: nowrap"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 10v7"></path><path d="M8 7v.01"></path><path d="M12 17v-4a2 2 0 0 1 4 0v4"></path><path d="M12 10v7"></path></svg><span>LinkedIn</span></a><a class="cta solid" target="_blank" rel="noopener" href="files/Scott-Prestidge-CV.pdf" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 10px; border: 1px solid #161616; border-radius: 999px; font-size: 12px; white-space: nowrap; background: #161616; color: #f6f6f4"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"></path><path d="M7 10l5 5 5-5"></path><path d="M5 20h14"></path></svg><span>Download CV</span></a></div>
+</div>
+</div></div><div class="foot"><footer style="border-top: 1px solid #dcdcd8; padding: 18px 0 28px; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5e5e5b; display: flex; justify-content: space-between">
+<span>© 2026 Scott Prestidge · Based in Dubai</span>
+</footer></div></div></section>
+</main>
+<button class="cue hide" id="cue" aria-label="Next section">Scroll <span>↓</span></button>
+<div class="modal" id="modal" aria-hidden="false"><div class="backdrop"></div><div class="dlgwrap" id="dlgslot"></div></div>
+<template data-pop="re-extraction"><div role="dialog" aria-modal="true" class="dlg" aria-label="Re-Extraction" style="width: 1240px; height: 840px; background: #f6f6f4; box-sizing: border-box; display: flex; position: relative">
+<img src="images/reextraction-hero.jpg" alt="Facade screen and scaffolding from outside" style="display: block; width: 520px; height: 840px; object-fit: cover; flex: none; background: #e4e4e0">
+<a href="#" data-close aria-label="Close" style="position: absolute; top: 14px; right: 18px; font-size: 24px; line-height: 1; padding: 4px 8px">×</a>
+<div style="flex: 1; box-sizing: border-box; padding: 24px 84px 76px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center">
+<p style="margin: 0 0 18px; font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Design proposal · RMIT · Semester 1, 2024</p>
+<div style="width: 552px; text-align: center"><h2 id="t" style="margin: 0; font-size: 70.54px; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-5.07px)"><span style="font-weight: 600">Re-</span><span style="font-weight: 600">Extraction</span></h2></div>
+<p style="margin: 28px 0 0; font-size: 18px; font-weight: 300; line-height: 1.35; text-wrap: balance">Reusing a building as a source <span style="font-weight: 600">of material and space.</span></p>
+<p style="margin: 36px 0 0; width: 552px; font-size: 13px; font-weight: 300; line-height: 1.8; color: #3a3a38; text-align: justify; text-align-last: center">This proposal reimagines a redundant concrete office building at 60 Collins Street through selective extraction rather than demolition. Cuts follow the path of the sun, opening an internal landscape of light and exposed material, and the marks left by extraction become part of the architecture.</p>
+<div style="margin-top: 48px; width: 552px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 8px; padding-top: 18px; border-top: 1px solid #dcdcd8; text-wrap: balance"><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Studio</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">_post/Extractivism</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Tutors</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">I. Nazareth &amp; R. Sherman</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Exhibited</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Circularity 2024, by Polestar</div></div></div>
+<div style="margin-top: 48px"><div style="display: flex; gap: 16px"><img src="images/reextraction-scaffold.jpg" alt="Scaffolding inside the carved-out building" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"><img src="images/reextraction-hole.jpg" alt="Facade with a circular opening cut through it" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"><img src="images/reextraction-walkway.jpg" alt="Long interior walkway lit through the facade" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"></div></div>
+<a href="#" data-close style="position: absolute; bottom: 36px; left: 520px; right: 0; text-align: center; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600">← Back to work</a>
+</div>
+</div>
+</template><template data-pop="parti-line"><div role="dialog" aria-modal="true" class="dlg" aria-label="PartiLine" style="width: 1240px; height: 840px; background: #f6f6f4; box-sizing: border-box; display: flex; position: relative">
+<img src="images/partiline-hero.jpg" alt="Exploded axonometric render of the Parti Line housing blocks" style="display: block; width: 520px; height: 840px; object-fit: cover; flex: none; background: #e4e4e0">
+<a href="#" data-close aria-label="Close" style="position: absolute; top: 14px; right: 18px; font-size: 24px; line-height: 1; padding: 4px 8px">×</a>
+<div style="flex: 1; box-sizing: border-box; padding: 24px 84px 76px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center">
+<p style="margin: 0 0 18px; font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Design proposal · RMIT · Semester 2, 2023</p>
+<div style="width: 552px; text-align: center"><h2 id="t" style="margin: 0; font-size: 110.12px; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-8.27px)"><span style="font-weight: 600">Parti</span> <span style="font-weight: 600">Line</span></h2></div>
+<p style="margin: 28px 0 0; font-size: 18px; font-weight: 300; line-height: 1.35; text-wrap: balance">Designing shared living <span style="font-weight: 600">on a constrained urban site.</span></p>
+<p style="margin: 36px 0 0; width: 552px; font-size: 13px; font-weight: 300; line-height: 1.8; color: #3a3a38; text-align: justify; text-align-last: center">A multi-residential proposal on Royal Parade, Parkville, making better use of a constrained urban site while supporting everyday liveability. A close study of the one-bedroom unit shaped the layout, and shared amenities give residents places to come together while keeping their homes private.</p>
+<div style="margin-top: 48px; width: 552px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 8px; padding-top: 18px; border-top: 1px solid #dcdcd8; text-wrap: balance"><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Studio</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Parti Line</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Tutor</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Anna Jankovic</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Type</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Multi-residential design proposal</div></div></div>
+<div style="margin-top: 48px"><div style="display: flex; gap: 16px"><img src="images/partiline-corridor.jpg" alt="Interior render of a corridor with a ladder" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"><img src="images/partiline-kitchen.jpg" alt="Interior render of a kitchen and dining space" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"><img src="images/partiline-bedroom.jpg" alt="Interior render of a bedroom with a yellow curtain" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"></div></div>
+<a href="#" data-close style="position: absolute; bottom: 36px; left: 520px; right: 0; text-align: center; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600">← Back to work</a>
+</div>
+</div>
+</template><template data-pop="emerging-formations"><div role="dialog" aria-modal="true" class="dlg" aria-label="EmergingFormations" style="width: 1240px; height: 840px; background: #f6f6f4; box-sizing: border-box; display: flex; position: relative">
+<img src="images/emerging-hero.jpg" alt="The final form floating against a pale background" style="display: block; width: 520px; height: 840px; object-fit: cover; flex: none; background: #e4e4e0">
+<a href="#" data-close aria-label="Close" style="position: absolute; top: 14px; right: 18px; font-size: 24px; line-height: 1; padding: 4px 8px">×</a>
+<div style="flex: 1; box-sizing: border-box; padding: 24px 84px 76px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center">
+<p style="margin: 0 0 18px; font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Design proposal · RMIT · Semester 1, 2023</p>
+<div style="width: 552px; text-align: center"><h2 id="t" style="margin: 0; font-size: 46.92px; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-3.31px)"><span style="font-weight: 600">Emerging</span> <span style="font-weight: 600">Formations</span></h2></div>
+<p style="margin: 28px 0 0; font-size: 18px; font-weight: 300; line-height: 1.35; text-wrap: balance">Combining computational modelling <span style="font-weight: 600">with AI-assisted exploration.</span></p>
+<p style="margin: 36px 0 0; width: 552px; font-size: 13px; font-weight: 300; line-height: 1.8; color: #3a3a38; text-align: justify; text-align-last: center">Over fourteen weeks, the project combined scripted geometry, digital sculpting and AI imagery. Grasshopper set the form, Blender and ZBrush built the surface detail, Houdini generated the glazing, and Midjourney informed mood and texture through each iteration.</p>
+<div style="margin-top: 48px; width: 552px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 8px; padding-top: 18px; border-top: 1px solid #dcdcd8; text-wrap: balance"><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Studio</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Diffusion Tectonics</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Tutors</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Roland Snooks &amp; Alan Kim</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Tools</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Grasshopper · Blender · ZBrush · Houdini · Midjourney</div></div></div>
+<div style="margin-top: 48px"><img src="images/emerging-wide.jpg" alt="Expanded wide render of the form in a landscape" style="display: block; width: 552px; height: 180px; object-fit: cover; background: #e4e4e0"></div>
+<a href="#" data-close style="position: absolute; bottom: 36px; left: 520px; right: 0; text-align: center; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600">← Back to work</a>
+</div>
+</div>
+</template><template data-pop="displacement"><div role="dialog" aria-modal="true" class="dlg" aria-label="Displacement" style="width: 1240px; height: 840px; background: #f6f6f4; box-sizing: border-box; display: flex; position: relative">
+<img src="images/displacement-hero.jpg" alt="Light at the end of a vaulted concrete corridor" style="display: block; width: 520px; height: 840px; object-fit: cover; flex: none; background: #e4e4e0">
+<a href="#" data-close aria-label="Close" style="position: absolute; top: 14px; right: 18px; font-size: 24px; line-height: 1; padding: 4px 8px">×</a>
+<div style="flex: 1; box-sizing: border-box; padding: 24px 84px 76px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center">
+<p style="margin: 0 0 18px; font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #5e5e5b">Design proposal · VUW · Semester 2, 2022</p>
+<div style="width: 552px; text-align: center"><h2 id="t" style="margin: 0; font-size: 73.53px; line-height: 0.95; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; transform: translateX(-5.29px)"><span style="font-weight: 600">Displacement</span></h2></div>
+<p style="margin: 28px 0 0; font-size: 18px; font-weight: 300; line-height: 1.35; text-wrap: balance">An archive shaped by light, <span style="font-weight: 600">protection and public access.</span></p>
+<p style="margin: 36px 0 0; width: 552px; font-size: 13px; font-weight: 300; line-height: 1.8; color: #3a3a38; text-align: justify; text-align-last: center">A National Archives building for Wellington that balances protecting sensitive collections with a welcoming public institution. Filtered, reflected and diffused daylight organises the spaces, while concrete walls, folded slabs and vertical cores drawn from Russian Constructivism separate storage, circulation and public use.</p>
+<div style="margin-top: 48px; width: 552px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 8px; padding-top: 18px; border-top: 1px solid #dcdcd8; text-wrap: balance"><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Course</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">ARCI312</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Tutor</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Daniel K. Brown</div></div><div><div style="font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #5e5e5b">Type</div><div style="margin-top: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">Public archive proposal</div></div></div>
+<div style="margin-top: 48px"><div style="display: flex; gap: 16px"><img src="images/displacement-stair.jpg" alt="Figures on a concrete stair" style="display: block; object-position: 50% 25%; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"><img src="images/displacement-front.jpg" alt="Front elevation render of the archive" style="display: block; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"><img src="images/displacement-3.jpg" alt="Curved concrete circulation with figures" style="display: block; object-position: 50% 25%; width: 173.33px; height: 180px; object-fit: cover; background: #e4e4e0"></div></div>
+<a href="#" data-close style="position: absolute; bottom: 36px; left: 520px; right: 0; text-align: center; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600">← Back to work</a>
+</div>
+</div>
+</template>
+<div class="phone pland" id="m-top"><div class="land" style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #161616; color: #f6f6f4; font-family: Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.55">
+<img src="images/buller-hero.webp" alt="Flame effects over the truss stage at sunset, Buller Open-Air" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,10,.72) 0%, rgba(10,10,10,.6) 40%, rgba(10,10,10,.9) 100%)"></div>
+<header style="position: absolute; top: 0; left: 0; right: 0; height: 52px; padding: 0 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(246,246,244,.25); font-size: 11px; color: #f6f6f4"><a href="index.html" style="text-transform: uppercase; letter-spacing: 0.12em"><span style="font-weight: 300">Scott</span> <span style="font-weight: 600">Prestidge</span></a><a href="#" data-pmenu style="font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase">Menu</a></header>
+<div style="position: absolute; left: 32px; right: 32px; top: 52px; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 44px 0 32px">
+<div><p style="margin: 0 0 20px; font-size: 10px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #f6f6f4; text-align: center; text-wrap: balance">Architecture × Live experiences</p><h1 style="margin: 0; color: #f6f6f4; display: grid; gap: 8px"><div style="width: 326px; margin: 0 auto; font-size: 99.46px; line-height: 1; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; font-weight: 600; transform: translateX(-4.5px)">Scott</div><div style="width: 326px; margin: 0 auto; font-size: 61.83px; line-height: 1; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; font-weight: 600; transform: translateX(-4.5px)">Prestidge</div></h1><div style="margin-top: 28px; display: grid; gap: 14px"><div style="text-align: center"><div style="font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(246,246,244,.7)">Focus</div><div style="margin-top: 6px; font-size: 13px; font-weight: 600; line-height: 1.45">Client servicing<br>Project &amp; production coordination</div></div><div style="text-align: center"><div style="font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(246,246,244,.7)">Background</div><div style="margin-top: 6px; font-size: 13px; font-weight: 600; line-height: 1.45">Master of Architecture (Distinction)<br>RMIT · Hospitality operations</div></div><div style="text-align: center"><div style="font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(246,246,244,.7)">Based</div><div style="margin-top: 6px; font-size: 13px; font-weight: 600; line-height: 1.45">Dubai<br>Open to opportunities</div></div></div></div>
+<div><p style="margin: 0; font-size: 14px; font-weight: 300; line-height: 1.7; color: rgba(246,246,244,.9); text-align: justify; text-align-last: center; hyphens: auto; -webkit-hyphens: auto">I’m Scott, an architecture graduate with hands-on experience in live events and venue leadership. Based in Dubai, I’m looking to join an experiential team where I can help turn ambitious ideas into memorable experiences.</p>
+<p style="margin: 12px 0 0; font-size: 16px; font-weight: 600; line-height: 1.45; text-align: justify; text-align-last: justify">Have a place for someone who thinks<br>creatively and gets stuck in? Let’s talk.</p>
+<div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px"><a class="cta solid" href="work.html#p1" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; background: #f6f6f4; color: #161616; border: 1px solid #f6f6f4">View work</a><a class="cta" href="work.html#contact" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border-radius: 999px; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; border: 1px solid rgba(246,246,244,.8)">Get in touch</a></div></div>
+</div></div><div class="pmenu" id="pmenu" role="dialog" aria-modal="true"><div style="height: 56px; box-sizing: border-box; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(246,246,244,.3); font-size: 12px; font-family: Inter, system-ui, sans-serif"><span style="text-transform: uppercase; letter-spacing: 0.1em"><span style="font-weight: 300">Scott</span> <span style="font-weight: 600">Prestidge</span></span><a href="#" data-pclose style="font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase">Close</a></div><nav style="padding: 32px 24px; font-family: Inter, system-ui, sans-serif"><a href="index.html" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">Home</a><a href="work.html#p1" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">Buller Open-Air</a><a href="work.html#p2" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">Tectonic Resonance</a><a href="work.html#p3" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">Ctrl + Alt + Escape</a><a href="work.html#more" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">More work</a><a href="work.html#about" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">About</a><a href="work.html#contact" style="display: block; text-align: center; padding: 18px 0; border-bottom: 1px solid rgba(246,246,244,.2); font-size: 26px; font-weight: 600; letter-spacing: -0.01em; text-transform: uppercase">Contact</a></nav></div></div>
+<script>(function(){if(matchMedia("(max-width: 767px)").matches)return;
+var root=document.documentElement,hdr=document.querySelector('.hdr'),deck=document.getElementById('deck');
+var secs=[].slice.call(deck.children),idx=0,moving=false,lastInput=0,modalOpen=false;
+var cue=document.getElementById('cue');cue.addEventListener('click',function(){if(!moving&&!modalOpen)show(idx+1)});var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function fit(){root.style.setProperty('--s',Math.min(innerWidth/1440,innerHeight/900,1.25));fitModal()}
+addEventListener('resize',fit);fit();
+var sky=document.querySelector('.skyline');
+function show(i,instant){i=Math.max(0,Math.min(secs.length-1,i));if(i===idx&&!instant)return;idx=i;
+ if(instant){deck.style.transition='none';root.style.setProperty('--i',i);deck.offsetHeight;deck.style.transition=''}else{moving=true;root.style.setProperty('--i',i)}
+ hdr.classList.toggle('solid',i>0);cue.classList.toggle('dark',i>0);cue.classList.toggle('hide',i===0||i===secs.length-1);if(sky&&secs[i].contains(sky))sky.classList.add('go');
+ if(history.replaceState){try{history.replaceState(null,'','#'+(secs[i].id||''))}catch(e){}}}
+deck.addEventListener('transitionend',function(e){if(e.target===deck)moving=false});
+function byId(id){for(var k=0;k<secs.length;k++)if(secs[k].id===id)return k;return 0}
+/* one gesture = one move: wait until the wheel/trackpad has been still for 450ms before accepting another */
+var acc=0;
+addEventListener('wheel',function(e){e.preventDefault();if(modalOpen)return;var now=Date.now(),gap=now-lastInput;lastInput=now;
+ if(moving||gap<450&&acc===null)return;if(gap>=450)acc=0;acc+=e.deltaY;if(Math.abs(acc)<20)return;var d=acc>0?1:-1;acc=null;show(idx+d)},{passive:false});
+setInterval(function(){if(acc===null&&!moving&&Date.now()-lastInput>450)acc=0},100);
+var ty=null;addEventListener('touchstart',function(e){ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchmove',function(e){e.preventDefault()},{passive:false});
+addEventListener('touchend',function(e){if(ty===null||modalOpen||moving)return;var dy=ty-e.changedTouches[0].clientY;ty=null;if(Math.abs(dy)>50)show(idx+(dy>0?1:-1))});
+addEventListener('keydown',function(e){if(modalOpen){if(e.key==='Escape')closeModal();return}if(moving)return;
+ if(['ArrowDown','PageDown',' '].indexOf(e.key)>-1&&!e.shiftKey){e.preventDefault();show(idx+1)}
+ else if(['ArrowUp','PageUp'].indexOf(e.key)>-1||(e.key===' '&&e.shiftKey)){e.preventDefault();show(idx-1)}
+ else if(e.key==='Home'){e.preventDefault();show(0)}else if(e.key==='End'){e.preventDefault();show(secs.length-1)}});
+/* links that move the deck */
+var menu=document.getElementById('workmenu'),wb=document.getElementById('workbtn');
+function closeMenu(){menu.classList.remove('open');wb.setAttribute('aria-expanded','false')}
+document.addEventListener('click',function(e){var a=e.target.closest('[data-go]');if(a){e.preventDefault();closeMenu();a.blur();show(byId(a.getAttribute('data-go')));return}
+ if(!e.target.closest('.workwrap'))closeMenu()});
+wb.addEventListener('click',function(e){e.preventDefault();if(matchMedia('(hover: none)').matches&&!menu.classList.contains('open')){menu.classList.add('open');wb.setAttribute('aria-expanded','true');return}closeMenu();show(byId('p1'))});
+/* pop-ups */
+var modal=document.getElementById('modal'),slot=document.getElementById('dlgslot'),tpl={},lastFocus;
+[].forEach.call(document.querySelectorAll('template[data-pop]'),function(t){tpl[t.getAttribute('data-pop')]=t});
+function fitModal(){if(!slot||!slot.firstElementChild)return;var h=slot.firstElementChild.offsetHeight;slot.style.setProperty('--ms',Math.min(1,(innerWidth-32)/1240,(innerHeight-32)/h))}
+function openModal(k){if(!tpl[k]||modalOpen)return;lastFocus=document.activeElement;slot.innerHTML='';slot.appendChild(tpl[k].content.cloneNode(true));fitModal();modalOpen=true;
+ requestAnimationFrame(function(){requestAnimationFrame(function(){modal.classList.add('open');var c=slot.querySelector('[aria-label=Close]');c&&c.focus({preventScroll:true})})})}
+function closeModal(){if(!modalOpen||modal.classList.contains('closing'))return;modal.classList.add('closing');modal.classList.remove('open');
+ setTimeout(function(){modal.classList.remove('closing');slot.innerHTML='';modalOpen=false;lastFocus&&lastFocus.focus&&lastFocus.focus({preventScroll:true})},reduce?0:1000)}
+document.addEventListener('click',function(e){var p=e.target.closest('[data-popup]');if(p){e.preventDefault();openModal(p.getAttribute('data-popup'));return}
+ if(e.target.closest('[data-close]')||e.target.classList.contains('backdrop')){e.preventDefault();closeModal()}});
+/* arriving from a full project page */
+var h=location.hash.slice(1);if(h){var map={work:'p1',top:'landing'};show(byId(map[h]||h),true)}
+})();
+</script>
+<script>(function(){if(!matchMedia("(max-width: 767px)").matches)return;
+function gw(){if(location.hash.length>1){location.replace('work.html'+location.hash);return 1}}addEventListener('hashchange',gw);if(gw())return;
+document.addEventListener('touchstart',function(){},{passive:true});var ph=document.querySelector('.phone'),land=ph.querySelector('.land'),hd=land.querySelector('header'),c=land.lastElementChild;
+function fit(){var zz=Math.min(innerWidth,600)/390;ph.style.zoom=zz;var H=Math.round(innerHeight/zz);land.style.height=H+'px';
+ c.style.transform='';c.style.height='';c.style.bottom='0';c.style.boxSizing='border-box';
+ var lr=land.getBoundingClientRect(),k=lr.height/H,a=c.children[0].getBoundingClientRect().height,b=c.children[1].getBoundingClientRect().height;
+ var need=a+b+k*(44+32+24),avail=lr.bottom-hd.getBoundingClientRect().bottom;
+ if(avail<need){var sc=avail/need;c.style.bottom='auto';c.style.height=(need/k)+'px';c.style.transformOrigin='50% 0';c.style.transform='scale('+sc+')'}}
+addEventListener('resize',fit);addEventListener('orientationchange',function(){setTimeout(fit,300)});if(document.fonts)document.fonts.ready.then(fit);fit();
+document.addEventListener('click',function(e){var m=e.target.closest('[data-pmenu]');if(m){e.preventDefault();document.getElementById('pmenu').classList.add('open')}var x=e.target.closest('[data-pclose]');if(x){e.preventDefault();x.closest('.pmenu').classList.remove('open')}});
+})();</script><script>(function(){
+var FULL=false;
+function ok(i){if(!i||i.tagName!=='IMG'||i.closest('a')||i.closest('.land')||i.closest('.landing')||i.closest('.lbx'))return false;
+ var inPop=i.closest('.dlg,.psheet');if(!inPop&&!FULL)return false;
+ var hr=inPop||i.closest('.view,.phone');if(hr&&hr.querySelector('img')===i)return false;
+ var r=i.getBoundingClientRect();return r.width>0&&r.width<innerWidth*0.95}
+var box=document.createElement('div');box.className='lbx';box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-label','Image viewer');
+box.innerHTML='<figure><img alt=""></figure><button class="lbc" aria-label="Close">×</button><button class="lbp" aria-label="Previous image">←</button><button class="lbn" aria-label="Next image">→</button><div class="lbk"></div>';
+document.body.appendChild(box);
+var im=box.querySelector('img'),cnt=box.querySelector('.lbk'),list=[],k=0,last=null;
+function show(n){k=(n+list.length)%list.length;var s=list[k];im.src=s.currentSrc||s.src;im.alt=s.alt||'';
+ var multi=list.length>1;box.querySelector('.lbp').style.visibility=box.querySelector('.lbn').style.visibility=multi?'':'hidden';cnt.textContent=multi?(k+1)+' / '+list.length:''}
+function open(i){var root=i.closest('.dlg,.psheet')||document;list=[].filter.call(root.querySelectorAll('img'),ok);if(list.indexOf(i)<0)list=[i];last=document.activeElement;show(list.indexOf(i));box.classList.add('open');box.querySelector('.lbc').focus({preventScroll:true})}
+function close(){box.classList.remove('open');if(last&&last.focus)last.focus({preventScroll:true})}
+function isOpen(){return box.classList.contains('open')}
+document.addEventListener('mouseover',function(e){var t=e.target;if(t.tagName==='IMG'&&!t.classList.contains('lbz')&&ok(t))t.classList.add('lbz')},true);
+document.addEventListener('click',function(e){
+ if(isOpen()){e.stopPropagation();e.preventDefault();var t=e.target;
+  if(t.closest('.lbp'))show(k-1);else if(t.closest('.lbn'))show(k+1);else if(t===im&&list.length>1&&innerWidth>767)show(k+1);else close();return}
+ var t=e.target;if(t.tagName==='IMG'&&ok(t)){e.stopPropagation();e.preventDefault();open(t)}},true);
+addEventListener('keydown',function(e){if(!isOpen())return;e.stopImmediatePropagation();e.preventDefault();
+ if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(k-1);else if(e.key==='ArrowRight'||e.key===' ')show(k+1)},true);
+addEventListener('wheel',function(e){if(isOpen()){e.stopImmediatePropagation();e.preventDefault()}},{capture:true,passive:false});
+var sx=null,sy=0;
+box.addEventListener('touchstart',function(e){if(e.touches.length===1){sx=e.touches[0].clientX;sy=e.touches[0].clientY}else sx=null},{passive:true});
+box.addEventListener('touchmove',function(e){if(e.touches.length===1)e.preventDefault()},{passive:false});
+box.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;sx=null;
+ if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){show(k+(dx<0?1:-1))}else if(dy>80)close()});
+})();</script>
+</body>
+</html>
